@@ -141,8 +141,8 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
             var imageType = /^image\//
             if (!imageType.test(portraitFile.type)) return
             var size = portraitFile.size / 1000 
-            if (size > 3000) {
-                alert('图片大小：' + size + 'K \n\n 一个头像而已，大小请控制在3M内。。')
+            if (size > 5000) {
+                alert('图片大小：' + size + 'K \n\n 一个头像而已，大小请控制在5M内。。')
                 return
             }
             
