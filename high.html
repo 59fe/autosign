@@ -176,14 +176,14 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
         // 文字信息
         ctx.font = 'bold 68px Microsoft YaHei'
         ctx.fillStyle = '#333'
-        ctx.fillText(nickname.value, 457, 190)
+        ctx.fillText(nickname.value, 455, 190)
         ctx.font = '52px Microsoft YaHei'
         var nicknameWidth = ctx.measureText(nickname.value).width
-        ctx.renderText(department.value, 457 + nicknameWidth * 1.3 + 60, 190, 2) // 名称信息右边缘和部门信息左边缘相距60。*1.3用来微调
+        ctx.renderText(department.value, 455 + nicknameWidth * 1.3 + 60, 190, 2) // 名称信息右边缘和部门信息左边缘相距60。*1.3用来微调
         ctx.font = '44px Microsoft YaHei'
         ctx.fillStyle = '#444'
-        ctx.renderText('电话: ' + phone.value, 456, 346, 2)
-        ctx.renderText('邮箱: ' + email.value, 928, 346, 4)
+        ctx.renderText('电话: ' + phone.value, 455, 346, 2)
+        ctx.renderText('邮箱: ' + email.value, 927, 346, 4)
     }
     function saveImg() {
         if (portraitFile) {

@@ -61,8 +61,8 @@
 <body>
 <input id="file_input" type="file"/>
 <div id="file_cover">点击上传或拖曳头像图片到此</div>    
-<input class="info-input" type="text" id="nickname" placeholder="花名" maxlength="6" value="">
-<input class="info-input" type="text" id="department" placeholder="所属部门" maxlength="14" value="">
+<input class="info-input" type="text" id="nickname" placeholder="花名" maxlength="6" value="雷欧">
+<input class="info-input" type="text" id="department" placeholder="所属部门" maxlength="14" value="产品研发中心/设计部">
 <input class="info-input" type="text" id="phone" placeholder="手机号码" maxlength="11" value="">
 <input class="info-input" type="text" id="email" placeholder="公司邮箱" maxlength="23" value="">
 <button id="save" >保存到本地</button>
@@ -171,14 +171,14 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
             ctx.restore()
         }
         // 文字信息
-        ctx.font = 'bold 21px Microsoft YaHei'
+        ctx.font = '22px Microsoft YaHei'
         ctx.fillStyle = '#333'
         //文字区的最左边
         var txtOriginLeft = 134
-        ctx.fillText(nickname.value, txtOriginLeft, 60)
+        ctx.fillText(nickname.value, txtOriginLeft, 62)
         ctx.font = '14px Microsoft YaHei'
         var nicknameWidth = ctx.measureText(nickname.value).width
-        ctx.renderText(department.value, txtOriginLeft + nicknameWidth * 1.5 + 20, 59, 1) // 名称信息右边缘和部门信息左边缘相距20。*1.5用来微调
+        ctx.renderText(department.value, txtOriginLeft + nicknameWidth * 1.5 + 20, 62, 1) // 名称信息右边缘和部门信息左边缘相距20。*1.5用来微调
         ctx.font = '13px Microsoft YaHei'
         ctx.fillStyle = '#444'
         ctx.renderText('电话: ' + phone.value, txtOriginLeft, 104, 0.7)
