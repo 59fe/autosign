@@ -166,9 +166,9 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
         ctx.font = 'bold 21px Microsoft YaHei'
         ctx.fillStyle = '#333'
         ctx.fillText(nickname.value, 137, 60)
-        ctx.font = '15px Microsoft YaHei'
+        ctx.font = '14px Microsoft YaHei'
         var nicknameWidth = ctx.measureText(nickname.value).width
-        ctx.renderText(department.value, 137 + nicknameWidth * 1.3 + 18, 61, 1) // 名称信息右边缘和部门信息左边缘相距60。*1.3用来微调
+        ctx.renderText(department.value, 137 + nicknameWidth * 1.5 + 20, 59, 1) // 名称信息右边缘和部门信息左边缘相距60。*1.3用来微调
         ctx.font = '13px Microsoft YaHei'
         ctx.fillStyle = '#444'
         ctx.renderText('电话: ' + phone.value, 137, 104, 1)
